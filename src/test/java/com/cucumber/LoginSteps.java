@@ -20,6 +20,7 @@ public class LoginSteps
 	{
 		if(browsernm.equalsIgnoreCase("chrome"))
 		{
+			System.out.println("open browser....................");
 			System.out.println("Chrome Browser");
 			System.setProperty("webdriver.chrome.driver","D:\\Selenium\\29062019\\chromedriver.exe");
 			Config.driver=new ChromeDriver();
@@ -43,6 +44,7 @@ public class LoginSteps
 	@And ("^user enters application url \"(.*)\"$")
 	public void enterApplicationUrl(String url)
 	{
+		System.out.println("enter application url........");
 		Config.driver.get(url);
 		System.out.println("enter application url successfully");
 	}
